@@ -1,0 +1,34 @@
+
+.title {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+.title h1 b {
+  color: #FB8C0A;
+}
+
+h1 .icons {
+  background-color: #fff !important;
+  z-index: -1 !important;
+  border: 2px ! important;
+}
+
+.boxA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid{
+  border-left: 2px solid black ;
+  margin: 0 15px;
+  height: auto;
+}
+
+h4{
+  margin: -45px 0px 0px 35px;
+}
+p{
+  margin: 1px 25px 0px 38px
+}

@@ -1,0 +1,43 @@
+body {
+  border: 0px;
+}
+
+.BoxContainer{
+  background-color: #0E2254;
+  color: antiquewhite;
+}
+  
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./HIre.png);
+  background-size: cover;
+  background-repeat: none;
+  background-repeat: no-repeat;
+  height: 21rem;
+  color: aliceblue;
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./hirePic.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-repeat: no-repeat;
+  height: 23rem;
+  background-repeat: none;
+}
+.box1h1 b{
+  color: #FF8F0B;
+  text-align: center;
+} 
+.box1h1{
+  text-align: center;
+} 
+  
+.box1para{
+  text-align: center;
+  font-family: 'Open Sans';
+}

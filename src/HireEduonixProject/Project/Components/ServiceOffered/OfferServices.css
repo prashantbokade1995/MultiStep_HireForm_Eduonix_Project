@@ -1,0 +1,28 @@
+.CardHeading {
+  text-align: center;
+}
+.Cardcontainer{
+  padding: 5px;
+}
+
+.Cardbox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 5px;
+}
+.cardbox1{
+  background-color: #F5F3D9;
+}
+.cardbox2{
+  background-color: #EDE6FF;
+}
+.cardbox3{
+  background-color: #E1FAFF;
+}
+
+.cardbox4{
+  background-color: #E9F5E7;
+}
