@@ -25,7 +25,7 @@ const HireReq = ({activeStep, steps, handleNext}) => {
     event.preventDefault();
     event.stopPropagation();
 
-    handleNext()l
+    handleNext()
   };
 
 
