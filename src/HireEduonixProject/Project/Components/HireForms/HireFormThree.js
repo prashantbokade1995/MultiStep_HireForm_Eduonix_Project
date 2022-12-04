@@ -20,9 +20,16 @@ const HireFormThree = ({activeStep, steps, handleNext}) => {
       if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();
+
+        setValidated(true);
+
+        return;
       }
-  
-      setValidated(true);
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      handleNext();
     };
 
 
@@ -80,11 +87,7 @@ const HireFormThree = ({activeStep, steps, handleNext}) => {
       
       </Row>
       <div className=" d-grid gap-2 mt-4">
-      <button className="btn btn-warning" type="submit" 
-      onClick ={handleSubmit}>Submit</button>
-      </div>
-      <div className=" d-grid gap-2 mt-4">
-      <button className="btn btn-warning" type="submit" onClick = {handleNext}>{activeStep === steps.lenght ? "Submit" : "Submit"}</button>
+      <button className="btn btn-warning" type="submit">Submit</button>
       </div>
       </Form>
     </>

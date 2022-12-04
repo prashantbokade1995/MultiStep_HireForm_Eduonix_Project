@@ -16,9 +16,16 @@ const HireReq = ({activeStep, steps, handleNext}) => {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+
+      setValidated(true);
+
+      return;
     }
 
-    setValidated(true);
+    event.preventDefault();
+    event.stopPropagation();
+
+    handleNext()l
   };
 
 
@@ -68,11 +75,7 @@ const HireReq = ({activeStep, steps, handleNext}) => {
         </Form.Group>
       </Row>
       <div className=" d-grid gap-2 mt-4">
-      <button className="btn btn-warning" type="submit" 
-      onClick ={handleSubmit}>Submit</button>
-      </div>
-      <div className=" d-grid gap-2 mt-4">
-      <button className="btn btn-warning" type="submit" onClick = {handleNext}>{activeStep === steps.lenght ? "Submit" : "Next"}</button>
+      <button className="btn btn-warning" type="submit">Next</button>
       </div>
       
       </Form>
